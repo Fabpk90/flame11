@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "flame.h"
+#include "../core/flame.h"
 
 int main(int argc, char const *argv[])
 {

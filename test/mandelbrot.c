@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "flame.h"
+#include "../core/flame.h"
 
 //
 void drawMandelbrot(flame_obj_t *fo, long iter, long x_max, long y_max, int color)
