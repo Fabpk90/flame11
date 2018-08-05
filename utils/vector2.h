@@ -11,4 +11,6 @@ typedef struct vector2_s
 }vector2_t;
 
 
+vector2_t createVector2(float x, float y);
+
 #endif

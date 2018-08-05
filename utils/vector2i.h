@@ -11,4 +11,6 @@ typedef struct vector2i_s
 }vector2i_t;
 
 
+vector2i_t createVector2i(int x, int y);
+
 #endif
