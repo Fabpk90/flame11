@@ -10,7 +10,11 @@ int main(int argc, char const *argv[])
     int clickX, clickY;
     flame_obj_t *fo = flame_open("Test flame11", windowHeight, windowWidth);
 
-    point_t point;
+    point_t *point;
+
+    point = createPoint(10, 10, 800, 500, 500);
+
+    drawPoint(fo, point);
     while (1)
     {
         c = flame_wait_click(fo, &clickX, &clickY);
@@ -22,6 +26,8 @@ int main(int argc, char const *argv[])
         else if (c == 'q')
             break;
     }
+
+    freePoint(point);
 
     flame_close(fo);
 
