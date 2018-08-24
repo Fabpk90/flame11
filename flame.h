@@ -23,7 +23,7 @@ void flame_flush(flame_obj_t *fo);
 void flame_clear_display(flame_obj_t *fo);
 void flame_draw_point(flame_obj_t *fo, int x, int y);
 flame_obj_t *flame_open(char *title, int width, int height);
-char flame_wait(flame_obj_t *fo, int *click_x, int *click_y);
+char flame_wait_click(flame_obj_t *fo, int *click_x, int *click_y);
 void flame_set_color(flame_obj_t *fo, int red, int green, int blue );
 void flame_draw_line(flame_obj_t *fo, int x1, int y1, int x2, int y2);
 void flame_clear_color(flame_obj_t *fo,  int red, int green, int blue );
